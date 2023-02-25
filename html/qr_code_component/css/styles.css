@@ -1,0 +1,95 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
+    --font_main: 'Outfit', sans-serif;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+/*1rem = 10px with this 62.5 fsize*/
+/* Box model help with padding and size -> box-sizing: border-box */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--Light_gray);
+}
+
+.container{
+    min-height: 95vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    background-color: var(--White);
+    border-radius: 20px;
+    width: 27rem;
+    height: 42rem;
+}
+
+@media (max-width: 375px) {
+    .label{
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+}
+
+.qr{
+    border-radius: 2rem;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: auto;
+}
+
+.qr-text{
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.text-title{
+    text-align: center;
+    font-family: var(--font_main);
+    font-weight: 700;
+    color:var(--Dark_blue);
+}
+
+.text-info{
+    text-align: center;
+    color:var(--Grayish_blue);
+    font-family: var(--font_main);
+    font-weight:400
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    max-width: 100%;
+    min-height: 5vh;
+}
+
+.footer-attribution{
+    font-size: 1.1rem;
+    padding-bottom: 1vh;
+}
+
+.footer-attribution a{
+    color: hsl(228, 45%, 44%);
+}
