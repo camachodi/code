@@ -6,14 +6,7 @@
     --font_main: 'Outfit', sans-serif;
 }
 
-p{
-    font-size: 1.5rem;
-}
-
-/*1rem = 10px with this 62.5 fsize*/
-/* Box model help with padding and size -> box-sizing: border-box */
 html{
-    font-size: 62.5%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
 }
@@ -24,6 +17,15 @@ html{
 
 body{
     background-color: var(--Light_gray);
+}
+
+h1{
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 .container{
@@ -37,44 +39,38 @@ body{
 .label{
     background-color: var(--White);
     border-radius: 20px;
-    width: 27rem;
-    height: 42rem;
+    max-width: 290px;
+    padding: 10px;
 }
 
 @media (max-width: 375px) {
     .label{
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 }
 
 .qr{
-    border-radius: 2rem;
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: auto;
+    border-radius: 20px;
+    max-width: 100%;
 }
 
 .qr-text{
     max-width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
+    text-align: center;
 }
 
 .text-title{
-    text-align: center;
     font-family: var(--font_main);
-    font-weight: 700;
     color:var(--Dark_blue);
+    font-weight: 700;
 }
 
 .text-info{
-    text-align: center;
     color:var(--Grayish_blue);
     font-family: var(--font_main);
-    font-weight:400
+    font-weight:400;
 }
 
 footer{
@@ -86,7 +82,7 @@ footer{
 }
 
 .footer-attribution{
-    font-size: 1.1rem;
+    font-size: 11px;
     padding-bottom: 1vh;
 }
 
