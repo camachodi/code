@@ -19,12 +19,7 @@ body{
     background-color: var(--Light_gray);
 }
 
-h1{
-    font-size: 20px;
-}
-
 p{
-    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -51,14 +46,15 @@ p{
 }
 
 .qr{
-    border-radius: 20px;
     max-width: 100%;
+    border-radius: 20px;
 }
 
 .qr-text{
-    max-width: 90%;
     margin: 5%;
     text-align: center;
+    font-size: 15px;
+    max-width: 90%;
 }
 
 .text-title{
